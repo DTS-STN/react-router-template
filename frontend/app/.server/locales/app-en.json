@@ -1,0 +1,16 @@
+{
+  "index": {
+    "about": "React router template -- rename this!",
+    "page-title": "Welcome React router template -- rename this!"
+  },
+  "template": {
+    "about": "React router template -- rename this!",
+    "page-title": "React router template -- rename this!",
+    "button": {
+      "back": "Back to my dashboard"
+    }
+  },
+  "input": {
+    "required": "required"
+  }
+}

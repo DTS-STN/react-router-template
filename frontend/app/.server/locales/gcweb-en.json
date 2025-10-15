@@ -1,0 +1,82 @@
+{
+  "app": {
+    "account": "Account",
+    "logout": "Logout",
+    "profile": "Profile",
+    "profile.href": "{{baseUri}}/en/profile",
+    "security-settings": "Security Settings",
+    "security-settings.href": "{{baseUri}}/en/security-settings",
+    "contact-us": "Contact Us",
+    "contact-us.href": "{{baseUri}}/en/contact-us",
+    "title": "My Service Canada Account",
+    "menu-dashboard": "My dashboard",
+    "menu-dashboard.href": "{{baseUri}}/en/my-dashboard"
+  },
+  "breadcrumbs": {
+    "dashboard": "My dashboard"
+  },
+  "dialog": {
+    "close": "Close"
+  },
+  "error-summary": {
+    "header_one": "The following error was found in the form:",
+    "header_other": "The following {{count}} errors were found in the form:"
+  },
+  "footer": {
+    "about-site": "About this site",
+    "gc-symbol": "Symbol of the Government of Canada",
+    "privacy": {
+      "href": "{{baseUri}}/TC.aspx?mode=ReadOnly&lang=eng#privacy",
+      "text": "Privacy"
+    },
+    "service-canada": "Service Canada",
+    "terms-conditions": {
+      "href": "{{baseUri}}/TC.aspx?mode=ReadOnly&lang=eng#terms",
+      "text": "Terms and conditions"
+    }
+  },
+  "header": {
+    "govt-of-canada.text": "Government of Canada",
+    "govt-of-canada.other-lang-text": "Gouvernement du Canada",
+    "language-selection": "Language selection",
+    "other-lang": "fr"
+  },
+  "input-label": {
+    "required": "required"
+  },
+  "language": "English",
+  "language-switcher": {
+    "alt-lang": "Français"
+  },
+  "nav": {
+    "skip-to-about": "Skip to About this site",
+    "skip-to-content": "Skip to main content"
+  },
+  "not-found": {
+    "page-message": "We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for.",
+    "page-subtitle": "(Error 404)",
+    "page-title": "We couldn't find that web page"
+  },
+  "page-details": {
+    "date-modfied": "Date modified:",
+    "page-details": "Page details",
+    "screen-id": "Screen identifier:",
+    "version": "Version:"
+  },
+  "screen-reader": {
+    "new-tab": "opens in a new tab"
+  },
+  "server-error": {
+    "correlation-id": "<strong>Correlation ID:</strong> <span>{{correlationId}}</span>",
+    "error-code": "<strong>Error code:</strong> <span>{{errorCode}}</span>",
+    "page-message": "We expect the problem to be fixed shortly. It's not your computer or Internet connection but a problem with our website's server.",
+    "page-subtitle": "(Error {{statusCode}})",
+    "page-title": "We're having a problem with that page"
+  },
+  "session-timeout": {
+    "continue-session": "Continue session",
+    "description": "Your session will expire automatically in {{timeRemaining}}. Select \"Continue Session\" to extend your session.",
+    "end-session": "End session now",
+    "header": "Session timeout warning"
+  }
+}

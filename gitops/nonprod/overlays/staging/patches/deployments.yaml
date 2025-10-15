@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  annotations:
+    secret.reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: frontend
+  template:
+    spec:
+      containers:
+        - name: frontend
+          envFrom:
+            - configMapRef:
+                name: frontend
+            - secretRef:
+                name: frontend
+          env:
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: redis-shared
+                  key: REDIS_PASSWORD

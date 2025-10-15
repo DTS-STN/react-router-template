@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  annotations:
+    secret.reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: frontend
+  template:
+    spec:
+      containers:
+        - name: frontend
+          image: dtsrhpdevscedacr.azurecr.io/canada-disability-benefit/cdb-frontend:0.0.0-d1e247fb-00058
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: frontend
+            - secretRef:
+                name: frontend
+          env:
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: redis-shared
+                  key: REDIS_PASSWORD
+        - name: fluentd
+          image: docker.io/fluentd
+          args: [--config, /etc/fluentd.conf]
+          resources:
+            requests:
+              cpu: 50m
+              memory: 100Mi
+            limits:
+              cpu: 100m
+              memory: 200Mi
+          volumeMounts:
+            - name: audit-logs
+              mountPath: /logs
+            - name: fluentd-conf
+              mountPath: /etc/fluentd.conf
+              subPath: fluentd.conf
+      volumes:
+        - name: fluentd-conf
+          configMap:
+            name: frontend-fluentd

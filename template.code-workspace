@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "frontend"
+    },
+    {
+      "path": "gitops"
+    }
+  ],
+  "settings": {
+    "tailwindCSS.experimental.configFile": "frontend/app/tailwind.css"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": [
+    "./__mocks__/**/*",
+    "./.react-router/types/**/*",
+    "./.react-router/types/**/.server/**/*",
+    "./app/**/*",
+    "./app/**/.client/**/*",
+    "./app/**/.server/**/*",
+    "./e2e/**/*",
+    "./server/**/*",
+    "./tests/**/*",
+    "./tests/**/.client/**/*",
+    "./tests/**/.server/**/*",
+    "./eslint.config.mjs",
+    "./playwright.config.ts",
+    "./prettier.config.mjs",
+    "./react-router.config.ts",
+    "./vite.config.ts",
+    "./vite.server.config.ts",
+    "./vitest.workspace.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "checkJs": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+    "resolveJsonModule": true,
+    "rootDirs": ["./", "./.react-router/types"],
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
+    "types": ["@react-router/node", "vite/client"]
+  }
+}

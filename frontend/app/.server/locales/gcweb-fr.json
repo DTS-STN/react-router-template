@@ -1,0 +1,82 @@
+{
+  "app": {
+    "account": "Compte",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "profile.href": "{{baseUri}}/fr/profil",
+    "security-settings": "Paramètres de sécurité",
+    "security-settings.href": "{{baseUri}}/fr/parametres-securite",
+    "contact-us": "Contactez-nous",
+    "contact-us.href": "{{baseUri}}/fr/contactez-nous",
+    "title": "Mon dossier Service Canada",
+    "menu-dashboard": "Mon tableau de bord",
+    "menu-dashboard.href": "{{baseUri}}/fr/mon-tableau-de-bord"
+  },
+  "breadcrumbs": {
+    "dashboard": "Mon tableau de bord"
+  },
+  "dialog": {
+    "close": "Fermer"
+  },
+  "error-summary": {
+    "header_one": "L'erreur suivante a été trouvée dans le formulaire\u00a0:",
+    "header_other": "Les {{count}} erreurs suivantes ont été trouvées dans le formulaire\u00a0:"
+  },
+  "footer": {
+    "about-site": "À propos de ce site",
+    "gc-symbol": "Symbole du gouvernement du Canada",
+    "privacy": {
+      "href": "{{baseUri}}/TC.aspx?mode=ReadOnly&lang=fra#privacy",
+      "text": "Confidentialité"
+    },
+    "service-canada": "Service Canada",
+    "terms-conditions": {
+      "href": "{{baseUri}}/TC.aspx?mode=ReadOnly&lang=fra#terms",
+      "text": "Avis"
+    }
+  },
+  "header": {
+    "govt-of-canada.text": "Gouvernement du Canada",
+    "govt-of-canada.other-lang-text": "Government of Canada",
+    "language-selection": "Sélection de la langue",
+    "other-lang": "en"
+  },
+  "input-label": {
+    "required": "obligatoire"
+  },
+  "language": "Français",
+  "language-switcher": {
+    "alt-lang": "English"
+  },
+  "nav": {
+    "skip-to-about": "Passer à «\u00a0À propos de ce site\u00a0»",
+    "skip-to-content": "Passer au contenu principal"
+  },
+  "not-found": {
+    "page-message": "Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu'une page ait été déplacée ou supprimée. Heureusement, nous pouvons vous aider à trouver ce que vous cherchez.",
+    "page-subtitle": "(Erreur 404)",
+    "page-title": "Nous ne pouvons trouver cette page"
+  },
+  "page-details": {
+    "date-modfied": "Date de modification\u00a0:",
+    "page-details": "Détails de la page",
+    "screen-id": "Identificateur d'écran\u00a0:",
+    "version": "Version\u00a0:"
+  },
+  "screen-reader": {
+    "new-tab": "s'ouvre dans un nouvel onglet"
+  },
+  "server-error": {
+    "correlation-id": "<strong>ID de corrélation\u00a0:</strong> <span>{{correlationId}}</span>",
+    "error-code": "<strong>Code d'erreur\u00a0:</strong> <span>{{errorCode}}</span>",
+    "page-message": "Nous espérons résoudre le problème sous peu. Il ne s'agit pas d'un problème avec votre ordinateur ou Internet, mais plutôt avec le serveur de notre site Web.",
+    "page-subtitle": "(Erreur {{statusCode}})",
+    "page-title": "Nous éprouvons des difficultés avec cette page"
+  },
+  "session-timeout": {
+    "continue-session": "Continuer la session",
+    "description": "Votre session expirera automatiquement dans {{timeRemaining}}. Sélectionnez «\u00a0Continuer la session\u00a0» pour prolonger votre session.",
+    "end-session": "Mettre fin à la session",
+    "header": "Avertissement d'expiration de la session"
+  }
+}
