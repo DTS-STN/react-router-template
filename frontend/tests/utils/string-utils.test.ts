@@ -11,9 +11,9 @@ describe('string-utils', () => {
     });
 
     it('should generate a random string of specified length with the correct specific character set', () => {
-      const str = randomString(128, 'Canada Disability Benefits');
+      const str = randomString(128, 'React Router Template');
       expect(str.length).toEqual(128);
-      expect(str).toMatch(/[Canada Disability Benefits]+/);
+      expect(str).toMatch(/[React Router Template]+/);
     });
   });
 

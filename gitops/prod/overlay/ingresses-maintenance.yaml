@@ -34,7 +34,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: canada-disability-benefit-portal.prod-dp-internal.dts-stn.com
+    - host: react-router-template-portal.prod-dp-internal.dts-stn.com
       http:
         paths:
           - path: /

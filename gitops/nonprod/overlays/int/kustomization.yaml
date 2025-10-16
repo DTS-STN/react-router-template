@@ -3,7 +3,7 @@ kind: Kustomization
 nameSuffix: -int
 labels:
   - pairs:
-      app.kubernetes.io/part-of: canada-disability-benefit
+      app.kubernetes.io/part-of: react-router-template
       app.kubernetes.io/managed-by: teamcity
       app.kubernetes.io/cluster: dts-dev-sced-rhp-spoke-aks
       app.kubernetes.io/environment: int

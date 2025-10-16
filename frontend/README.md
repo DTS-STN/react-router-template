@@ -1,4 +1,4 @@
-# Welcome to Canada Disability Benefits!
+# Welcome to React Router Template!
 
 A modern, production-ready template for building full-stack React applications using React Router.
 
@@ -46,12 +46,12 @@ To build and run using Docker:
 
 ```bash
 # with docker
-docker build --tag cdb-frontend --file containerfile .
-docker run --init --interactive --tty --rm --network host --env-file .env --name cdb-frontend cdb-frontend
+docker build --tag rrt-frontend --file containerfile .
+docker run --init --interactive --tty --rm --network host --env-file .env --name rrt-frontend rrt-frontend
 
 # with podman
-podman build --tag cdb-frontend --file containerfile .
-podman run --init --interactive --tty --rm --network host --env-file .env --name cdb-frontend cdb-frontend
+podman build --tag rrt-frontend --file containerfile .
+podman run --init --interactive --tty --rm --network host --env-file .env --name rrt-frontend rrt-frontend
 ```
 
 The containerized application can be deployed to any platform that supports Docker, including:

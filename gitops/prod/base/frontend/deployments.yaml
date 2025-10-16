@@ -16,7 +16,7 @@ spec:
       containers:
         - name: frontend
           # Note: image tag should be pinned to a specific version in overlays
-          image: dtsrhpdevscedacr.azurecr.io/canada-disability-benefit/cdb-frontend
+          image: dtsrhpdevscedacr.azurecr.io/react-router-template/rrt-frontend
           ports:
             - name: http
               containerPort: 3000

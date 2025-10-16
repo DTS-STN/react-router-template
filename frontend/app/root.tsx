@@ -76,14 +76,14 @@ export default function App({ loaderData }: Route.ComponentProps) {
     }
   }, []);
 
-  const englishTitle = 'My Canada Disability Benefit letters';
-  const frenchTitle = 'Mes lettres de la Prestation canadienne pour les personnes handicapées';
+  const englishTitle = 'React Router Template';
+  const frenchTitle = '(French) React Router Template';
   const dcTermsTitle = currentLanguage === 'en' ? englishTitle : frenchTitle;
   const dcTermsLanguage = currentLanguage === 'en' ? 'eng' : 'fra';
   const englishCreator = 'Employment and Social Development Canada';
   const frenchCreator = 'Emploi et Développement social Canada';
   const dcTermsCreator = currentLanguage === 'en' ? englishCreator : frenchCreator;
-  const dcSiteNameBilingual = 'ESDC-EDSC_MSCA-MDSC_CDBLetters-LettresPCPH';
+  const dcSiteNameBilingual = 'ESDC-EDSC_MSCA-MDSC_PCPH';
 
   return (
     <html lang={currentLanguage}>

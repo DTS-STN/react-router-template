@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: dtsrhpprodscedspokeacr.azurecr.io/canada-disability-benefit/cdb-frontend:1.0.0
+          image: dtsrhpprodscedspokeacr.azurecr.io/react-router-template/rrt-frontend:1.0.0
           envFrom:
             - configMapRef:
                 name: frontend

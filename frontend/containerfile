@@ -1,4 +1,4 @@
-# Containerfile for building the Canada Disability Benefit frontend application.
+# Containerfile for building the React Router Template frontend application.
 #
 # This file is designed to optimize Podman's layer caching and reduce image size
 # for production deployments. Think carefully before you edit this file.
@@ -11,7 +11,7 @@
 
 # Example build and run commands:
 #
-#   $ podman build . --tag cdb-frontend --file containerfile \
+#   $ podman build . --tag rrt-frontend --file containerfile \
 #       --build-arg BUILD_DATE="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
 #       --build-arg BUILD_ID="000001" \
 #       --build-arg BUILD_REVISION="$(git rev-parse --short=8 HEAD)" \
@@ -19,7 +19,7 @@
 #
 #   $ podman run --init --interactive --tty --rm --network host \
 #       --env-file ./.env --env SESSION_COOKIE_SECURE=false \
-#       --name cdb-frontend cdb-frontend
+#       --name rrt-frontend rrt-frontend
 #
 
 # ---------------------------------------------------------------------------- #
@@ -96,9 +96,9 @@ ARG BUILD_ID="000000"
 ARG BUILD_REVISION="00000000"
 ARG BUILD_VERSION="0.0.0"
 ARG IMAGE_AUTHORS="Digital Technology Solutions"
-ARG IMAGE_DESCRIPTION="Canada Disability Benefit -- Frontend Application"
-ARG IMAGE_TITLE="cdb-frontend"
-ARG IMAGE_URL="https://github.com/DTS-STN/danada-disability-benefit/"
+ARG IMAGE_DESCRIPTION="React Router Template -- Frontend Application"
+ARG IMAGE_TITLE="rrt-frontend"
+ARG IMAGE_URL="https://github.com/DTS-STN/react-router-template/"
 ARG IMAGE_VENDOR="Employment and Social Development Canada"
 
 ENV BUILD_DATE=${BUILD_DATE}
